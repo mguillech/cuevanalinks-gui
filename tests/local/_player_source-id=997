@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><script type="text/javascript">
+//<![CDATA[
+window.__CF=window.__CF||{};window.__CF.AJS={"ga_key":{"ua":"UA-2752072-3","ga_bs":"2"}};
+//]]>
+</script>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Cuevana | Reproducir video</title>
+<link rel="stylesheet" type="text/css" href="http://sc.cuevana.tv/css/getplugin.css" />
+<script type="text/javascript" src="http://sc.cuevana.tv/js/jquery.js"></script>
+<script type="text/javascript">
+function goSource(key,host) {
+	var e = $("#error");
+	if ($.browser.msie && host!='megaupload' && host!='bitshare' && host!='filefactory') {
+		e.html("Lo sentimos, esta fuente no está disponible para tu navegador. Te recomendamos usar Google Chrome, Firefox o Safari.");
+	} else {
+		e.html("Cargando fuente seleccionada...");
+		$.ajax({
+			url: 'source_get',
+			type: 'POST',
+			data: {key:key,host:host,vars:"&id=997&subs=&tipo=&amp;sub_pre="},
+			success: function(u) {
+				e.html("Fuente cargada con éxito. Redirigiendo...");
+				window.location = u;
+			},
+			error: function() {
+				e.html("Ha ocurrido un error. Por favor, intenta nuevamente.");
+			}
+		});
+	}
+}
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-2752072-3']);
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageLoadTime']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+(function(b){(function(a){"__CF"in b&&"DJS"in b.__CF?b.__CF.DJS.push(a):"addEventListener"in b?b.addEventListener("load",a,!1):b.attachEvent("onload",a)})(function(){"FB"in b&&"Event"in FB&&"subscribe"in FB.Event&&(FB.Event.subscribe("edge.create",function(a){_gaq.push(["_trackSocial","facebook","like",a])}),FB.Event.subscribe("edge.remove",function(a){_gaq.push(["_trackSocial","facebook","unlike",a])}),FB.Event.subscribe("message.send",function(a){_gaq.push(["_trackSocial","facebook","send",a])}));"twttr"in b&&"events"in twttr&&"bind"in twttr.events&&twttr.events.bind("tweet",function(a){if(a){var b;if(a.target&&a.target.nodeName=="IFRAME")a:{if(a=a.target.src){a=a.split("#")[0].match(/[^?=&]+=([^&]*)?/g);b=0;for(var c;c=a[b];++b)if(c.indexOf("url")===0){b=unescape(c.split("=")[1]);break a}}b=void 0}_gaq.push(["_trackSocial","twitter","tweet",b])}})})})(window);
+/* ]]> */
+</script>
+</head>
+
+<body>
+<div style="position:absolute;width:640px;height:360px;background-color:#000;text-align:center;">
+<div style="padding-top:40px;">
+<h2>Elige una fuente</h2>
+<div style="margin-bottom:20px">La fuente determina desde cual servidor se va a reproducir el video.</div>
+<div id="sources">
+<ul>
+	<li style="width:33.333333333333%;margin-top:10px;"><a href="#" id="f_0"><img src="servers/img/megaupload.jpg" height="130" width="130" border="0" /></a></li>
+	<script type="text/javascript">
+	$("#f_0").click(function() {
+		goSource('3d2699003e88cd6df678fa07e5ea9402','megaupload');
+		return false;
+	});
+	</script>
+		<li style="width:33.333333333333%;margin-top:10px;"><a href="#" id="f_1"><img src="servers/img/bitshare.jpg" height="130" width="130" border="0" /></a></li>
+	<script type="text/javascript">
+	$("#f_1").click(function() {
+		goSource('029e8ba8a16ef9958cf32869982a63c8','bitshare');
+		return false;
+	});
+	</script>
+		<li style="width:33.333333333333%;margin-top:10px;"><a href="#" id="f_2"><img src="servers/img/filefactory.jpg" height="130" width="130" border="0" /></a></li>
+	<script type="text/javascript">
+	$("#f_2").click(function() {
+		goSource('c69460cc3e542c8a707d428f1d4c854d','filefactory');
+		return false;
+	});
+	</script>
+	<div style="clear:left"></div>
+</ul>
+</div>
+<div id="error"></div>
+
+</div>
+</div>
+<script type="text/javascript">
+//<![CDATA[
+window.__CF=window.__CF||{};window.__CF.u="/cdn-cgi/async/cf/uri/";window.__CF.p="43/1ac42cf2687b8e8f2593e7c045ec8d";window.__CF.o=0;window.__CF.c=1;(function(){var a=document,b=a.createElement("script");b.src="//ajax.cloudflare.com/cdn-cgi/nexp/v=918368360/cf_tools.min.js";b.setAttribute("async","true");a=a.getElementsByTagName("script");a=a[a.length-1];a.parentNode.insertBefore(b,a)})();
+//]]>
+</script><script type="text/javascript" src="//ajax.cloudflare.com/cdn-cgi/nexp/v=4198638154/apps1.min.js"></script></body>
+</html>

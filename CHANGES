@@ -1,0 +1,97 @@
+Release 0.5.2 (Sep 9, 2011)
+---------------------------
+- Many bug fixes, including Cuevana.tv's html layout redesign
+
+Release 0.5.1 (Aug 5, 2011)
+---------------------------
+- Usable GUI :-D
+- EXE installer available
+- Package performs fine with distutils (ie, ability to install it thru setup.py)
+- Many bug fixes
+
+
+Release 0.5 (in development)
+----------------------------
+- First GUI mockup ! thanks to Mart�n Chikilian.
+- Huge test suite for the API (104 tests). And they pass ;-)
+- Trying to give some robustness handling exceptions 
+  (not available content, keyboard interrupt, etc)
+- Many bug fixes
+
+
+Release 0.4.4 (Jul 3, 2011)
+----------------------------
+- Huge test suite for the API (104 tests). And they pass ;-) 
+- Many bug fixes
+- Trying to give some robustness handling exceptions 
+  (not available content, keyboard interrupt, etc)
+- Added ``next`` and ``again`` shortcuts 
+
+
+Release 0.4.3 (Jun 17, 2011)
+-----------------------------
+
+- Fixed subtitles retrieving (handling referer/cookies)
+
+Release 0.4.2 (May 28, 2011)
+----------------------------
+- Fixed bugs #4 and #6 about progressbar api changes. 
+- Unittesting (automated with `tox <http://codespeak.net/tox/>`_) started
+
+Release 0.4.1 (May 15, 2011)
+----------------------------
+- Fixed a bug: subtitle's URL is different in movies than in episodes
+
+.. _0.4:
+
+Release 0.4 (Apr 21, 2011)
+--------------------------
+
+- Added :meth:`Show.get_episodes`
+- Added :option:`end` to get a slice between two episodes or seasons
+- Added ``max_rate`` to :func:`downloaders.megaupload` . 
+- Added :option:`-r` to define max_rate from the CLI
+
+
+Release 0.3.1.1 (Apr 16, 2011)
+-------------------------------
+
+- Fix a bug in setup.py: missing README.rst on package (thanks to Luis Romano)
+- Added MANIFEST.in
+
+
+.. _0.3:
+
+Release 0.3 (Apr 14, 2011)
+--------------------------
+
+* Added an optional :abbr:`ETA (Estimated Time of Arrival)` callback when 
+  downloading. It's useful, for example, to buffer  and play
+* Added :class:`ConfigFile` handler (see :ref:`config`)
+* Added pickling suport :meth:`Content.get_pickle` and :meth:`Show.get_pickle`
+* Added :attr:`Episode.next` and :attr:`Episode.previous` 
+* Added :ref:`config` support
+* Added :option:`-p` to play with autobuffer
+
+
+.. _0.2:
+
+Release 0.2dev (Apr 13, 2011)
+-------------------------------
+
+* Removed dependency of `feedparser` to parse RSS feeds. 
+* Added :func:`megaupload` to download files directly. It shows a progressbar.
+* Added :option:`-d` to download contents
+ 
+Bug fixed
++++++++++
+
+* Fix #1 : get_links doesn't exist for :class:`Show` objects
+
+Release 0.1 (Apr 9, 2011)
+--------------------------
+
+* First public release and the most 
+  buggy piece of code of the whole history
+
+

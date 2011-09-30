@@ -1,0 +1,8 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+import cuevanalinks.cuevanagui as gui
+
+if __name__ == '__main__':
+    mw = gui.MainWindow()
+    mw.main()
