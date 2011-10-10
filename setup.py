@@ -61,7 +61,7 @@ setup(
     scripts = ['bin/cuevanalinks-gui'],
     package_data = {'cuevanalinks-gui': ['resources/*.png']},
     data_files = data_files,
-    install_requires = ['pyquery>=0.5', 'cuevanalib', 'pyqt'],
+    install_requires = ['cuevanalib', 'pyqt'],
     classifiers = [
         'Development Status :: 4 - Beta',
         'Environment :: Console',
