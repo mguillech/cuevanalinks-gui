@@ -61,7 +61,7 @@ setup(
     scripts = ['bin/cuevanalinks-gui'],
     package_data = {'cuevanalinks-gui': ['resources/*.png']},
     data_files = data_files,
-    install_requires = ['pyquery>=0.5'],
+    install_requires = ['pyquery>=0.5', 'cuevanalib', 'pyqt'],
     classifiers = [
         'Development Status :: 4 - Beta',
         'Environment :: Console',
@@ -76,7 +76,8 @@ setup(
                           "optimize": 0, #2,
                           "includes": ['sip'],
                           "excludes": excludes,
-                          "packages": ['cuevanalinks-gui','lxml', 'gzip'],
+                          "packages": ['cuevanalinks-gui','lxml',
+                              'cuevanalib','gzip'],
                           "dll_excludes": dll_excludes,
                           "bundle_files": 3,
                           "dist_dir": "dist",
